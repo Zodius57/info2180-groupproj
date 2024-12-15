@@ -1,0 +1,110 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: #001529;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.add-contact-btn {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Filter Section */
+.filter-section {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.filter-section p {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter-btn {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-btn.active {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Contact Table */
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-table thead {
+    background: #f8f8f8;
+}
+
+.contact-table th,
+.contact-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px
