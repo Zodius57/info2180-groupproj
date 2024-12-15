@@ -1,6 +1,11 @@
+-- Make Database 
+DROP DATABASE IF EXISTS dolphin_crm;
+CREATE DATABASE dolphin_crm;
+USE dolphin_crm;
 
 -- Create Users Table
-CREATE TABLE Users (
+DROP TABLE IF EXISTS users;
+CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     firstname VARCHAR(255) NOT NULL,
     lastname VARCHAR(255) NOT NULL,
@@ -11,7 +16,8 @@ CREATE TABLE Users (
 );
 
 -- Create Contacts Table
-CREATE TABLE Contacts (
+DROP TABLE IF EXISTS contacts;
+CREATE TABLE contacts (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(100),
     firstname VARCHAR(255) NOT NULL,
@@ -29,7 +35,8 @@ CREATE TABLE Contacts (
 );
 
 -- Create Notes Table
-CREATE TABLE Notes (
+DROP TABLE IF EXISTS notes;
+CREATE TABLE notes (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     contact_id INTEGER NOT NULL,
     comment TEXT NOT NULL,
@@ -40,7 +47,7 @@ CREATE TABLE Notes (
 );
 
 -- Insert Admin User
-INSERT INTO Users (firstname, lastname, password, email, role, created_at)
+INSERT INTO users (firstname, lastname, password, email, role, created_at)
 VALUES (
     'Admin', 
     'User', 
